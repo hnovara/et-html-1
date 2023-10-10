@@ -1,0 +1,50 @@
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+nav ul li {
+    /* margin: 16px; */
+    /* margin-top: 16px;
+    margin-left: 16px; */
+    margin: 0 16px;
+}
+/* nav ul li a {
+    color: grey;
+    text-decoration: none;
+} */
+header a h1 {
+    color: black;
+}
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 1.75rem;
+    text-decoration: underline;
+    color: rgb(0, 30, 255);
+    cursor: pointer;
+}
+a:visited {
+    color: #c700b7;
+    text-decoration: none;
+}
+a:active {
+    color: #fff;
+}
+
+
+
+.header-container{
+    align-items: center;
+    background-color: blanchedalmond;
+    border-bottom: 1px solid black;
+    display: flex; 
+    justify-content: space-between;
+    position: fixed;
+    padding: 4px;
+    top: 0%;
+    width: 100%;
+}
+

@@ -1,34 +1,56 @@
 form {
-    margin: 2rem;
-    padding-top: 2rem;   
+    padding-top: 2rem; 
+    width: 25%;  
 }
+@media (min-width: 1000px) {
+    form {
+        padding: 2rem;
+        width: 25%;
+    }
+}
+@media (min-width: 470px) and (max-width: 1000px) {
+        form {
+        width: 50%;
+    }
+}
+@media (max-width: 470px) {
+    form {
+        width: 100%;
+    }
+}
+
+
 form button {
     background-color: rgb(122, 0, 122);
     border-radius: 1.5rem;
     border: none;
     color: rgb(255, 206, 255);
     padding: 0.5rem;
-    width: 15rem;
+    width: 100%;
 }
 form button:hover {
     background-color: rgb(255, 206, 255);
     color: rgb(122, 0, 122);
 }
 input, textarea {
+    box-sizing: border-box;
     border-radius: 1.5rem;
     border: 1px solid black;
     display: block;
     font-family: sans-serif;
     margin: 0.5rem 0;
     padding: 0.25rem;
-    width: 15rem;
+    width: 100%;
     /* resize: none; */
 }
 input {
     height: 1.5rem;
 }
 input[type="checkbox"] {
-    width: 1.5rem;
+    width: 100%;
+}
+.form-container {
+    padding: 2rem;
 }
 .field-conditions {
     display: flex;

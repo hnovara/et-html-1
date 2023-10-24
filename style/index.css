@@ -34,6 +34,11 @@ a {
     font-size: 1.4rem;
     text-decoration: none;
 }
+@media (max-width: 1400px) {
+    a {
+        font-size: 1rem;
+    }
+}
 
 /* Helpers */
 
@@ -43,9 +48,14 @@ a {
 .float-right {
     float: right;
 }
-.height-200 {
+/* .height-200 {
     height: 200px !important;
-}
+} */
 .ml-1 {
     margin-left: 16px;
+}
+@media(max-width: 700px) {
+    .img1 {
+        order: 6;
+    } 
 }

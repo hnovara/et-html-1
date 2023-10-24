@@ -2,6 +2,27 @@ nav ul {
     list-style-type: none;
     display: flex;
     padding: 0;
+    flex-flow: wrap;
+    justify-content: right;
+}
+.sub-menu {
+    align-items: center;
+    display: none;
+    background-color: rgb(252, 217, 164);
+    border: 1px solid rgb(80, 80, 80);
+    padding: 8px;
+    width: 100%;
+}
+@media (min-width: 1400px) {
+    header nav ul {
+        display: none;
+    }
+    .sub-menu {
+        display: flex;
+    }
+    .sub-menu nav ul {
+        justify-content: start;
+    }
 }
 nav ul li {
     /* margin: 16px; */
@@ -26,6 +47,11 @@ a:hover {
     color: rgb(0, 30, 255);
     cursor: pointer;
 }
+@media (max-width: 1400px) {
+    a:hover {
+        font-size: 1rem;
+    }
+}
 a:visited {
     color: #c700b7;
     text-decoration: none;
@@ -33,18 +59,17 @@ a:visited {
 a:active {
     color: #fff;
 }
-
-
-
 .header-container{
     align-items: center;
     background-color: blanchedalmond;
     border-bottom: 1px solid black;
     display: flex; 
     justify-content: space-between;
+    min-height: 62px;
     position: fixed;
     padding: 4px;
     top: 0%;
     width: 100%;
 }
+
 
